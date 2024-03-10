@@ -123,6 +123,37 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &166578716
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 166578717}
+  m_Layer: 0
+  m_Name: KitchenObjectHoldPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &166578717
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 166578716}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.13, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 637791256}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -447,6 +478,7 @@ MonoBehaviour:
   countersLayerMask:
     serializedVersion: 2
     m_Bits: 64
+  kitchenObjectHoldPoint: {fileID: 166578717}
 --- !u!4 &637791256
 Transform:
   m_ObjectHideFlags: 0
@@ -461,6 +493,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1477339599}
+  - {fileID: 166578717}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &637791257
@@ -473,6 +506,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9e962d2372992ef49ba79ed87803eae0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &674975649 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5250608508936774142, guid: 6d178fe5b4b76404e97b3d5b174a2f42,
+    type: 3}
+  m_PrefabInstance: {fileID: 2104700305}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d44ef812c5599fc468b1c9d78f0e08e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &780357186
@@ -947,6 +992,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5250608508936774142, guid: 6d178fe5b4b76404e97b3d5b174a2f42,
+        type: 3}
+      propertyPath: testing
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5250608508936774142, guid: 6d178fe5b4b76404e97b3d5b174a2f42,
+        type: 3}
+      propertyPath: kitchenObjectSO
+      value: 
+      objectReference: {fileID: 11400000, guid: f8e6a21c98554ba488c141c3c9663675,
+        type: 2}
+    - target: {fileID: 5250608508936774142, guid: 6d178fe5b4b76404e97b3d5b174a2f42,
+        type: 3}
+      propertyPath: secondClearCounter
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 8297349473503177606, guid: 6d178fe5b4b76404e97b3d5b174a2f42,
         type: 3}
       propertyPath: m_Name
@@ -1015,6 +1076,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5250608508936774142, guid: 6d178fe5b4b76404e97b3d5b174a2f42,
+        type: 3}
+      propertyPath: testing
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5250608508936774142, guid: 6d178fe5b4b76404e97b3d5b174a2f42,
+        type: 3}
+      propertyPath: kitchenObjectSO
+      value: 
+      objectReference: {fileID: 11400000, guid: 84bdccc4cf8a38f429a7cea8ae5fdf78,
+        type: 2}
+    - target: {fileID: 5250608508936774142, guid: 6d178fe5b4b76404e97b3d5b174a2f42,
+        type: 3}
+      propertyPath: secondClearCounter
+      value: 
+      objectReference: {fileID: 674975649}
     - target: {fileID: 8297349473503177606, guid: 6d178fe5b4b76404e97b3d5b174a2f42,
         type: 3}
       propertyPath: m_Name
